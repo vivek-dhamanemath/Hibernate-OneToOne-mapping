@@ -45,41 +45,9 @@ public class Person {
 public class Aadhar {
     @Id
     private int aadharId;
-    private String aadharNumber;
-
-    @OneToOne(mappedBy = "aadhar")
-    private Person person;
-
-    // getters and setters
-}
-```
-
-## Bidirectional One-to-One Mapping with `mappedBy`
-
-This is an enhanced bidirectional mapping where the `mappedBy` attribute is used to indicate which side is the non-owning (inverse) side. The `mappedBy` attribute refers to the field in the owning side.
-
-### Example
-
-```java
-@Entity
-public class Person {
-    @Id
-    private int personId;
-    private String personName;
+    private long aadharNo;
 
     @OneToOne
-    private Aadhar aadhar;
-
-    // getters and setters
-}
-
-@Entity
-public class Aadhar {
-    @Id
-    private int aadharId;
-    private String aadharNumber;
-
-    @OneToOne(mappedBy = "aadhar")
     private Person person;
 
     // getters and setters
