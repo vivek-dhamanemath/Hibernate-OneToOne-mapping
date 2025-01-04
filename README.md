@@ -4,7 +4,7 @@ This project demonstrates different types of One-to-One mappings in Hibernate.
 
 ## Unidirectional One-to-One Mapping
 
-In this approach, only one entity knows about the relationship. The owning entity has a reference to the related entity, and the relationship is defined in this entity only. Typically, a `@JoinColumn` annotation is used to specify the foreign key column.
+In this approach, only one entity knows about the relationship. The owning entity has a reference to the related entity, and the relationship is defined in this entity only. Typically, a `@OneToOne` annotation is used to specify the relationship.
 
 ### Example
 
@@ -16,7 +16,6 @@ public class Person {
     private String personName;
 
     @OneToOne
-    @JoinColumn(name = "aadhar_id")
     private Aadhar aadhar;
 
     // getters and setters
@@ -37,7 +36,6 @@ public class Person {
     private String personName;
 
     @OneToOne
-    @JoinColumn(name = "aadhar_id")
     private Aadhar aadhar;
 
     // getters and setters
@@ -70,7 +68,6 @@ public class Person {
     private String personName;
 
     @OneToOne
-    @JoinColumn(name = "aadhar_id")
     private Aadhar aadhar;
 
     // getters and setters
