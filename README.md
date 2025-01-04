@@ -90,6 +90,7 @@ public class Aadhar {
 
 - `Person.java`: Represents the Person entity.
 - `Aadhar.java`: Represents the Aadhar entity.
+- `App.java`: Contains the main method to run the application.
 
 ## How to Run
 
