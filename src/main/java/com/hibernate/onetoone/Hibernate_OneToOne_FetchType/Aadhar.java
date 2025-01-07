@@ -1,4 +1,4 @@
-package com.hibernate.onetoone.Hibernate_OneToOne;
+package com.hibernate.onetoone.Hibernate_OneToOne_FetchType;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
